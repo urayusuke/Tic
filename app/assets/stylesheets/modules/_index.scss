@@ -1,0 +1,32 @@
+.header{
+  background-color: #000055;
+  height: 100px;
+  width: 100vw;
+  color: white;
+  display: flex;
+  position: relative;
+  position: fixed;
+  font-weight: bold;
+  font-family: 'HanziPen SC','Apple Chancery','Osaka',YuGothic,'Yu Gothic',serif;
+  &__title{
+    line-height: 100px;
+    margin-left: 30px;
+    font-size: 50px;
+    letter-spacing: 0.2em;
+  }
+  &__list{
+    display: flex;
+    position: absolute;
+    right: 40px;
+    line-height: 60px;
+    p{
+      padding-left: 60px;
+      font-size: 22px;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
