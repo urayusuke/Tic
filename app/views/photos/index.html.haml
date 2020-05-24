@@ -4,6 +4,8 @@
     -if user_signed_in?
       %p.name
         = current_user.name
+      -# %p.header__create
+      -#   投稿する
       %p 
         = link_to 'ログアウト', destroy_user_session_path, method: :delete
     - else
@@ -11,6 +13,17 @@
         = link_to 'ログイン', new_user_session_path
       %p 
         = link_to '新規登録', new_user_registration_path
-        
-  .contents
-    .contents__image
+.contents
+  -if user_signed_in?
+    .contents__title 観光スポットを投稿する
+  = image_tag "tokushima3.jpg", class:"contents__image"
+  -#   -# = form_for @user do |u|
+  .contents__title 観光スポットを検索する
+  %input{type:"text"}
+  %input{type:"submit", value:"検索"} 
+  .contents__list
+    .contents__list-image
+      = image_tag "tokushima1.jpg"
+      = image_tag "tokushima2.jpg"
+      = image_tag "tokushima4.jpg"
+.footer Tourist information center
