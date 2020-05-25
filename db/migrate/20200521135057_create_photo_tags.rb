@@ -3,7 +3,7 @@ class CreatePhotoTags < ActiveRecord::Migration[5.2]
     create_table :photo_tags do |t|
       t.references :photo
       t.references :tag
-      t.timestamps
+      t.timestamps 
     end
   end
 end

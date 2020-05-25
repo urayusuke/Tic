@@ -1,11 +1,10 @@
 .header
-  .header__title Tic
+  .header__title 
+    =link_to 'Tic', root_path, class: "header__title-root"
   .header__list 
     -if user_signed_in?
       %p.name
         = current_user.name
-      -# %p.header__create
-      -#   投稿する
       %p 
         = link_to 'ログアウト', destroy_user_session_path, method: :delete
     - else
@@ -15,7 +14,8 @@
         = link_to '新規登録', new_user_registration_path
 .contents
   -if user_signed_in?
-    .contents__title 観光スポットを投稿する
+    .contents__title 
+      =link_to '観光スポットを投稿する', new_photos_path, class:"contents__title-new"
   = image_tag "tokushima3.jpg", class:"contents__image"
   -#   -# = form_for @user do |u|
   .contents__title 観光スポットを検索する
