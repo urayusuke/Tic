@@ -16,13 +16,19 @@
   -if user_signed_in?
     .contents__title 
       =link_to '観光スポットを投稿する', new_photos_path, class:"contents__title-new"
-  = image_tag "/image/tokushima3.jpg", class:"contents__image"
+  .contents__img
+    = image_tag "/image/tokushima3.jpg", class:"contents__image"
+    = image_tag "/image/tokushima1.jpg", class:"contents__image-slide"
+    = image_tag "/image/tokushima2.jpg", class:"contents__image-slide"
+    .contents__icons-left
+      = icon "fas", "arrow-left"
+    .contents__icons-right
+      = icon "fas","arrow-right"
   .contents__title 観光スポットを検索する
   %input{type:"text"}
   %input{type:"submit", value:"検索"} 
   .contents__list
     .contents__list-image
-      = image_tag "/image/tokushima1.jpg"
-      = image_tag "/image/tokushima2.jpg"
-      = image_tag "/image/tokushima4.jpg"
+      - @photo.each do |photo|
+        = photo.image
 .footer Tourist information center

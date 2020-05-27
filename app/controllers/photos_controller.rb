@@ -1,6 +1,7 @@
 class PhotosController < ApplicationController
 
   def index
+    @photo = Photo.all
   end
   
   def new
@@ -9,7 +10,6 @@ class PhotosController < ApplicationController
 
   def create
     Photo.create(photo_params)
-    redirect_to root_path
   end
 
   def update
