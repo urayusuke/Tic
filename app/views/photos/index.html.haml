@@ -16,14 +16,13 @@
   -if user_signed_in?
     .contents__title 
       =link_to '観光スポットを投稿する', new_photos_path, class:"contents__title-new"
-  = image_tag "tokushima3.jpg", class:"contents__image"
-  -#   -# = form_for @user do |u|
+  = image_tag "/image/tokushima3.jpg", class:"contents__image"
   .contents__title 観光スポットを検索する
   %input{type:"text"}
   %input{type:"submit", value:"検索"} 
   .contents__list
     .contents__list-image
-      = image_tag "tokushima1.jpg"
-      = image_tag "tokushima2.jpg"
-      = image_tag "tokushima4.jpg"
+      = image_tag "/image/tokushima1.jpg"
+      = image_tag "/image/tokushima2.jpg"
+      = image_tag "/image/tokushima4.jpg"
 .footer Tourist information center

@@ -1,0 +1,23 @@
+.image 
+  .image__form
+    %h1 写真を投稿する
+    .image__form-camera 
+      = icon("fas","camera")
+  .form
+    .form__image
+      = form_for @photo do |f|
+        = f.file_field :image
+        = f.text_field :text , placeholder: "キーワードを入力してください"
+        = f.submit "投稿"
+    %img{id:"image-file"}
+      :javascript
+        document.addEventListener('change', function(e){
+          var file = e.target.files[0];
+          var fileReader = new FileReader();
+          fileReader.onload = function() {
+            var dataUri = this.result;
+            var img = document.getElementById('image-file');
+            img.src = dataUri;
+          }
+          fileReader.readAsDataURL(file);
+        });
