@@ -84,7 +84,7 @@
 .image{
   margin: 100px auto;
   width: calc(100%/2);
-  height: 500px;
+  height: 600px;
   background-color: #EEE8AA;
   border: 1px solid orange;
   text-align: center;
@@ -100,11 +100,19 @@
     }
   }
   .form{
-    padding: 0 50px;
-    &__box{
-      border: 1px solid gray;
-      padding: 130px;
-      font-size: 40px;
+    #photo_image{
+      width: 100px;
+    }
+    &__image{
+      padding-bottom: 10px;
+      #photo_text{
+      width: 250px;
+      }
+    }
+    #image-file{
+      width: 650px;
+      height: 450px;
     }
   }
 }
+

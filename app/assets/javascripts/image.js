@@ -1,4 +1,9 @@
 $(function () {
-  $(document).on('change', 'input[type="file"]'),function () {
-  };
+  $('contents__image').slick({
+    accessibility: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    dots: true,
+    fade: true
+  });
 });
