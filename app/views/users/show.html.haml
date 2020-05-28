@@ -1,0 +1,5 @@
+.Photo__title
+  = @user.name
+.Photo__list
+  - @photo.each do |photo|
+    = image_tag photo.image.url

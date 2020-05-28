@@ -15,7 +15,7 @@
 .contents
   -if user_signed_in?
     .contents__title 
-      =link_to '観光スポットを投稿する', new_photos_path, class:"contents__title-new"
+      =link_to '観光スポットを投稿する', new_photo_path, class:"contents__title-new"
   .contents__img
     = image_tag "/image/tokushima3.jpg", class:"contents__image"
     = image_tag "/image/tokushima1.jpg", class:"contents__image-slide"
@@ -29,6 +29,7 @@
   %input{type:"submit", value:"検索"} 
   .contents__list
     .contents__list-image
-      - @photo.each do |photo|
-        = photo.image
+      - @photo.shuffle.first(6).each do |photo|
+        = link_to photo_path(photo.id) do
+          = image_tag photo.image.url 
 .footer Tourist information center

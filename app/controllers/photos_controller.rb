@@ -12,12 +12,14 @@ class PhotosController < ApplicationController
     Photo.create(photo_params)
   end
 
-  def update
+  def show
+    @photo = Photo.find(params[:id])
+    @user = User.find(params[:id])
   end
 
   private
   def photo_params
-    params.require(:photo).permit(:image, :text)
+    params.require(:photo).permit(:image, :text).merge(user_id: current_user.id)
   end
   
 end

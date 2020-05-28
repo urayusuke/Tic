@@ -1,0 +1,9 @@
+.Photo
+  .Photo__image
+    = image_tag @photo.image.url
+  .Photo__text
+    = @photo.text
+  .Photo__name
+    = @user.name
+  .Photo__link
+    = link_to "トップページに戻る", root_path, class:"link"

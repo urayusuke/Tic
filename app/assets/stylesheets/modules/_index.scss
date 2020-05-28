@@ -85,13 +85,15 @@
   }
 }
 
-.contents__list{
+.contents__list {
   border: 2px solid gray;
-  &-image{
-    width: 300px;
+  &-image {
+    width: 100vw;
     height: 300px;
     display: flex;
-    justify-content: space-between;
+    a{
+      display: flex ;
+    }
   }
 }
 
@@ -134,7 +136,7 @@
       padding-bottom: 10px;
       #photo_text{
       width: 250px;
-      }
+      } 
     }
     #image-file{
       width: 650px;
@@ -143,3 +145,43 @@
   }
 }
 
+.photo{
+  margin: 100px auto;
+  width: calc(100%/2);
+  background-color: #EEE8AA;
+  border: 1px solid orange;
+  text-align: center;
+  font-family: 'HanziPen TC',sans-serif;
+  &__title{
+    color: gray;
+    font-size: 30px;
+    padding-top: 10px;
+    &-link{
+      padding: 10px;
+      .link{
+        text-decoration: none;
+        color: blue;
+      }
+    }
+  }
+}
+
+.Photo{
+  text-align: center;
+  margin: 40px 250px;
+  background-color: orange;
+
+  &__image{
+    padding-top: 20px;
+  }
+  &__text{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+  }
+  .link{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+  }
+}

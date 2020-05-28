@@ -1,9 +1,8 @@
 class UsersController < ApplicationController
   
-  def update
+  def show
+    @user = User.find(params[:id])
+    @photo = @user.photos
   end
-
-  def edit
-  end 
 
 end
