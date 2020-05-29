@@ -1,6 +1,12 @@
 .Photo__title
-  = @user.name
+  %h1
+    = @user.name+"さんの投稿一覧"
   .Photo__list
-    - @photo.each do |photo|
-      = image_tag photo.image.url
-      = photo.text
+    %ul
+      %li
+        - @photo.each do |photo|
+          = photo.text
+          .file
+            = image_tag photo.image.url
+  .Photo__link
+    = link_to "トップページに戻る", root_path, class:"link"

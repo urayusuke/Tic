@@ -1,7 +1,11 @@
 class PhotosController < ApplicationController
-
   def index
     @photo = Photo.all
+    @photos = Photo.where(['text LIKE(?)', "%#{params[:keyword]}%"] )
+    respond_to do |format|
+      format.html 
+      format.json 
+    end
   end
   
   def new
@@ -14,14 +18,6 @@ class PhotosController < ApplicationController
 
   def show
     @photo = Photo.find(params[:id])
-  end
-
-  def search
-    @photos = Photo.search(params[:keyword])
-    respond_to do |format|
-      format.html
-      format.html
-    end
   end
 
   private

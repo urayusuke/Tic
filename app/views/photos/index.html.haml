@@ -1,3 +1,17 @@
+.header
+  .header__title 
+    =link_to 'Tic', root_path, class: "header__title-root"
+  .header__list 
+    -if user_signed_in?
+      %p.name
+        = link_to current_user.name , user_path(current_user)
+      %p 
+        = link_to 'ログアウト', destroy_user_session_path, method: :delete
+    - else
+      %p 
+        = link_to 'ログイン', new_user_session_path
+      %p 
+        = link_to '新規登録', new_user_registration_path
 .contents
   -if user_signed_in?
     .contents__title 
@@ -11,10 +25,10 @@
     .contents__icons-right
       = icon "fas","arrow-right"
   .contents__title 観光スポットを検索する
-  %input{type:"keyword", placeholder:"検索", class: "search-input"}
+  %input{type:"keyword", id:"form" , placeholder:"検索", class: "search-input"}
   .contents__list
     .contents__list-image
-      - @photo.shuffle.first(6).each do |photo|
+      - @photo.first(6).each do |photo|
         = link_to photo_path(photo.id) do
           = image_tag photo.image.url 
 .footer Tourist information center

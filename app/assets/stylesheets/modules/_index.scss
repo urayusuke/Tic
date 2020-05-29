@@ -89,7 +89,7 @@
 .contents__list {
   border: 2px solid gray;
   &-image {
-    width: 100vw;
+    width: 100%;
     height: 300px;
     display: flex;
     a{
@@ -131,7 +131,7 @@
   }
   .form{
     #photo_image{
-      width: 100px;
+      width: 130px;
     }
     &__image{
       padding-bottom: 10px;
@@ -171,7 +171,6 @@
   text-align: center;
   margin: 40px 250px;
   background-color: orange;
-
   &__image{
     padding-top: 20px;
   }
@@ -185,4 +184,31 @@
     color: blue;
     font-size: 20px;
   }
+}
+
+.Photo__title{
+  margin: 0 auto;
+  width: 50%;
+  height: 100%;
+  border: 2px solid gray;
+  background-color: #FFCC66;
+  font-size: 30px;
+  color: #444444;
+  text-align: center;
+  font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+  h1{
+    font-size: 30px;
+  }
+  .Photo__list{
+    text-align: center;
+    li{
+    .file{
+      padding: 20px;
+    }
+  }
+  }
+} 
+.link{
+  text-decoration: none;
+  color: blue;
 }
