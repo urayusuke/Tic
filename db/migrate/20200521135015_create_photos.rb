@@ -6,5 +6,6 @@ class CreatePhotos < ActiveRecord::Migration[5.2]
       t.timestamps
       t.integer :user_id
     end
+    add_index :image, :text, length: 20
   end
 end

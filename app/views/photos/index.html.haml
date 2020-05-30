@@ -28,7 +28,7 @@
   %input{type:"keyword", id:"form" , placeholder:"検索", class: "search-input"}
   .contents__list
     .contents__list-image
-      - @photo.first(6).each do |photo|
+      - @photo.shuffle.first(6).each do |photo|
         = link_to photo_path(photo.id) do
           = image_tag photo.image.url 
 .footer Tourist information center

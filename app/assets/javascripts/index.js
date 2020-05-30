@@ -2,6 +2,19 @@ $(function() {
   
   var search_list = $(".contents__list-image");
 
+  function appendPhoto(photo) {
+    var html = `
+      <a href="/photos/${photo.id}">
+      <img src = ${photo.image.url}>
+      </a>`
+    search_list.append(html);
+  }
+  function NoHTML(miss) {
+    var html = `
+    <div class="name">${miss}</div>`
+    search_list.append(html);
+  }
+
   $(".search-input").on("keyup", function() {
     var input = $(".search-input").val();
     $.ajax({
@@ -21,5 +34,8 @@ $(function() {
         NoHTML("一致するツイートがありません");
       }
     })
+    .fail(function() {
+      alert('error');
+    });
   });
 });
