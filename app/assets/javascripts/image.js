@@ -1,8 +1,10 @@
 $(function () {
-  $('.contents__icons-right').click(function() {
-  $(".contents__image").attr("src", "/image/tokushima1.jpg");
-});
-$('.contents__icons-left').click(function() {
-  $(".contents__image").attr("src", "/image/tokushima3.jpg");
-});
+  　$('.contents__img').slick({
+    adaptiveHeight:false,
+    autoplay:true,
+    autoplaySpeed:3000,
+    arrows:true,
+    dots:true,
+    draggable:true
+  });
 });
