@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: tic_production
-  username: tic
+  username: root
   password: <%= ENV['TIC_DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
