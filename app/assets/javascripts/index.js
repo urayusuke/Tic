@@ -31,7 +31,7 @@ $(function() {
         });
       }
       else {
-        NoHTML("一致するツイートがありません");
+        NoHTML("一致する画像がありません");
       }
     })
     .fail(function() {

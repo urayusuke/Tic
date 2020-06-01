@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+#Tic
+-簡単な写真投稿が出来る観光写真投稿型のアプリケーションです。
+-機能はそこまで充実していませんが、プログラミングを初めて学習して、約1ヶ月ぐらいで作成した物です。
