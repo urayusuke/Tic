@@ -46,7 +46,6 @@ group :development, :test do
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
-  gem 'sqlite3'
 end
 
 group :development do
@@ -57,6 +56,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'mysql2', '>= 0.4.4', '< 0.6.0'
+  gem 'sqlite3'
 end
 
 group :test do
