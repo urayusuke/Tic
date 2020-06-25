@@ -78,4 +78,6 @@ gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 
-gem 'pg', group: :production
+group :production do
+  gem 'pg'
+end
