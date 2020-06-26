@@ -48,7 +48,9 @@ production:
   url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
   adapter: postgresql
-  encoding: unicode
   pool: 5
+  encoding: unicode
+  database: ImageUpload_production
+  username: ImageUpload
+  password: <%= ENV['IMAGEUPLOAD_DATABASE_PASSWORD'] %>>
