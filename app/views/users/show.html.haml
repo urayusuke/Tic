@@ -7,6 +7,6 @@
         - @photo.each do |photo|
           = photo.text
           .file
-            = image_tag photo.image.url
+            = image_tag asset_path(photo.image.url)
   .Photo__link
     = link_to "トップページに戻る", root_path, class:"link"

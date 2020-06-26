@@ -1,6 +1,6 @@
 .Photo
   .Photo__image
-    = image_tag @photo.image.url
+    = image_tag asset_path(@photo.image.url)
   .Photo__text
     = @photo.text
   .Photo__link
