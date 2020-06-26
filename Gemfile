@@ -78,6 +78,7 @@ gem 'acts-as-taggable-on'
 gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'cloudinary' , '1.11.1'
 
 group :production do
   gem 'pg'
