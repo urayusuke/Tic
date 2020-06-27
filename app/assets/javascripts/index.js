@@ -3,7 +3,8 @@ $(function() {
   var search_list = $(".contents__list-image");
 
   function appendPhoto(photo) {
-    var html =`<a href=${photo.id}>
+    var html = 
+    `<a href="${photo.id}">
       <img src = ${photo.image.url}>
       </a>`
     search_list.append(html);
