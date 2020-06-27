@@ -4,7 +4,7 @@ $(function() {
 
   function appendPhoto(photo) {
     var html = 
-    `<a href="/photos/${photo.id}">
+    `<a href="photos/${photo.id}">
       <img src = ${photo.image.url}>
       </a>`
     search_list.append(html);

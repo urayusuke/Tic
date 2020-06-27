@@ -27,5 +27,5 @@
     .contents__list-image
       - @photo.shuffle.first(6).each do |photo|
         = link_to photo_path(photo.id) do
-          = image_tag asset_path(photo.image.url)
+          = image_tag photo.image.url
 .footer Tourist information center
