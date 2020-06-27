@@ -11,6 +11,12 @@
 - email : test@test
 - password : password
 
+# 開発環境　
+- 言語：Ruby/Ruby on Rails/JavaScript
+- ツール:Github/Visual Studio Code
+- DB:PostgreSQL
+
+
 # DB設計
 
 ## usersテーブル
