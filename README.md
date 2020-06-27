@@ -15,7 +15,7 @@
 - 言語：Ruby/Ruby on Rails/JavaScript
 - ツール:Github/Visual Studio Code
 - DB:PostgreSQL
-
+- サーバー:heroku
 
 # DB設計
 
