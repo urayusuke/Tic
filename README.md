@@ -44,4 +44,7 @@
 [![Image from Gyazo](https://i.gyazo.com/02b0ad0bdde1abf2907406ca734d351b.gif)](https://gyazo.com/02b0ad0bdde1abf2907406ca734d351b)
 
 ## 画像のプレビュー
-[![Image from Gyazo](https://i.gyazo.com/a398e792e78e4598ad66eb711db2d659.gif)](https://gyazo.com/a398e792e78e4598ad66eb711db2d659)
+[![Image from Gyazo](https://i.gyazo.com/a3ee2e8a3a9148f36cf76c9533746253.gif)](https://gyazo.com/a3ee2e8a3a9148f36cf76c9533746253)
+
+## 画像投稿後
+[![Image from Gyazo](https://i.gyazo.com/16949d273e1116d93cd9fa45a5be49d1.gif)](https://gyazo.com/16949d273e1116d93cd9fa45a5be49d1)
