@@ -41,7 +41,7 @@
 - belongs_to :user
 
 ## インクリメンタルサーチの実装
-[![Image from Gyazo](https://i.gyazo.com/02b0ad0bdde1abf2907406ca734d351b.gif)](https://gyazo.com/02b0ad0bdde1abf2907406ca734d351b)
+[![Image from Gyazo](https://i.gyazo.com/079a7aed164fef04ac383956e7f6e947.gif)](https://gyazo.com/079a7aed164fef04ac383956e7f6e947)
 
 ## 画像のプレビュー
 [![Image from Gyazo](https://i.gyazo.com/a3ee2e8a3a9148f36cf76c9533746253.gif)](https://gyazo.com/a3ee2e8a3a9148f36cf76c9533746253)
