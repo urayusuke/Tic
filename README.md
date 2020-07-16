@@ -11,6 +11,7 @@
 - name : test 
 - email : test@test
 - password : password
+**ログインページに記載しております**
 
 # 開発環境　
 - 言語：Ruby/Ruby on Rails/JavaScript
