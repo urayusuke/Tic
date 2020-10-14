@@ -1,7 +1,7 @@
 class PhotosController < ApplicationController
+  
   def index
-    @photo = Photo.all
-    @photos = Photo.where(['text LIKE(?)', "%#{params[:keyword]}%"] )
+    @photo = Photo.where(['text LIKE ?', "%#{params[:keyword]}%"])
     respond_to do |format|
       format.html 
       format.json 
